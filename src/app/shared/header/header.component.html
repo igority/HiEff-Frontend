@@ -1,0 +1,28 @@
+<div>
+  <title>HiEfficiency Bar - HMI</title>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">HiEfficiency Bar - HMI</a>
+    <button (click)="onMenuCollapse()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/main" routerLinkActive="active">Main<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/settings" routerLinkActive="active">Settings<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/log" routerLinkActive="active">Log<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/alarms" routerLinkActive="active">Alarms<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
