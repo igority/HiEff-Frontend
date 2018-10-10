@@ -1,13 +1,36 @@
 <div class="row">
 <div class="col-md-8">
-  <mat-card class="main-image">
+  <mat-card class="main-image-card">
     <img src="./assets/images/main.JPG" />
   </mat-card>
 </div>
 <div class="col-md-4">
-  <mat-card class="status">
+  <mat-card class="status-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>General Info</mat-card-title>
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      </mat-card-header>
+      <mat-card-content>
+        <div class="status-content">
+          <span>Status: </span>
+          <span [ngClass]="statusContentClass">{{ PLCStatusDescriptive }} ({{ PLCOutput.iPLC_STATUS }})</span>
+        </div>
+        <button (click)="onConfigModeClick()">{{ ConfigModeButtonText }}</button>
+      </mat-card-content>
+
   </mat-card>
-    <mat-card class="status-bottom">
+    <mat-card class="orders-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>Orders</mat-card-title>
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <span>Orders table goes here </span>
+        </div>
+      </mat-card-content>
     </mat-card>
 </div>
 

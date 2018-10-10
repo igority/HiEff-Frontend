@@ -1,3 +1,51 @@
-.main-image img {
+mat-card-header {
+    border-bottom: 1px solid gray;
+}
+
+mat-card-content {
+    padding-top: 20px;
+}
+.main-image-card {
+    padding: 0;
+}
+
+.main-image-card img {
     width: 100%;
+}
+
+.status-card {
+     height: 300px;
+    margin-bottom: 20px;
+}
+
+.orders-card {
+    height: 300px;
+}
+
+.status-content {
+    font-weight: bold;
+}
+
+.status-order-done {
+    color: green;
+}
+
+.status-unknown {
+    color: orange;
+}
+
+.status-new-order {
+    color: black;
+}
+
+.status-processing-order {
+    color: yellow;
+}
+
+.status-config-mode {
+    color: blue;
+}
+
+.status-alarm-mode {
+    color: red;
 }
